@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1 id="dballeft" onload="ticker()"></h1>
+<h1 id="dballeft" onload="ticker()" style="font-family:verdana"></h1>
 
 
 <!-- <script type="text/javascript" src="dbal.js"/> -->
@@ -15,19 +15,13 @@ function ticker() {
     var startDate = new Date("March 17, 2016");
     var endDate = new Date("June 11, 2016");
     var currentDate = new Date();
-    var quarterPeriod = endDate.getTime() - startDate.getTime();
-    var result = (1 - (currentDate.getTime() - startDate.getTime()) / quarterPeriod) * 475.00;
+    var quarterLength = endDate.getTime() - startDate.getTime();
+    var result = (1 - (currentDate.getTime() - startDate.getTime()) / quarterLength) * 475.00;
     if (result < 0) {
         result = 0.00;
     }
-    document.getElementById("dballeft").innerHTML = "$" + result.toFixed(2);
+    document.getElementById("dballeft").innerHTML = "Dbal Left: $" + result.toFixed(2);
 }
-//endDate = new Date("June 11, 2016");
-//cDate = new Date();
-//delay = new Date(cDate.getTime() + 1000);
-//while (cDate.getTime() != delay.getTime()) {
-//    cDate = new Date();
-//}
 setInterval(function(){ticker()}, 1000)
 </script>
 </body>
