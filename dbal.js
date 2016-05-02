@@ -18,9 +18,9 @@ function ticker() {
     document.getElementById("dballeft").innerHTML = "$" + result.toFixed(2);
 }
 
+ticker();
 endDate = new Date("June 11, 2016");
 cDate = new Date();
-safe = 0;
 while (cDate.getTime() != endDate.getTime()) {
     cDate = new Date();
     delay = new Date(cDate.getTime() + 1000);
