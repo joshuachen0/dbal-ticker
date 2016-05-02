@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1 id="dballeft">FUCK YOU</h1>
+<h1 id="dballeft" onload="ticker()">FUCK YOU</h1>
 
 
 <!-- <script type="text/javascript" src="dbal.js"/> -->
@@ -22,8 +22,7 @@ function ticker() {
     }
     document.getElementById("dballeft").innerHTML = "$" + result.toFixed(2);
 }
-
-ticker();
+/*
 endDate = new Date("June 11, 2016");
 cDate = new Date();
 //while (cDate.getTime() != endDate.getTime()) {
@@ -33,7 +32,7 @@ cDate = new Date();
     while (cDate.getTime() != delay.getTime()) {
         cDate = new Date();
     }
-//}
+//}*/
 </script>
 </body>
 </html>
