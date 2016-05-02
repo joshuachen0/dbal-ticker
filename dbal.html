@@ -26,14 +26,14 @@ function ticker() {
 ticker();
 endDate = new Date("June 11, 2016");
 cDate = new Date();
-while (cDate.getTime() != endDate.getTime()) {
+//while (cDate.getTime() != endDate.getTime()) {
     cDate = new Date();
     delay = new Date(cDate.getTime() + 1000);
     ticker();
     while (cDate.getTime() != delay.getTime()) {
         cDate = new Date();
     }
-}
+//}
 </script>
 </body>
 </html>
