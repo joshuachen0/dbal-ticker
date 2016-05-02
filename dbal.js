@@ -6,7 +6,7 @@ function displayDbal() {
     endDate = new Date("June 11, 2016");
 }*/
 
-/*function ticker() {
+function ticker() {
     var startDate = new Date("March 17, 2016");
     var endDate = new Date("June 11, 2016");
     var currentDate = new Date();
@@ -29,4 +29,4 @@ cDate = new Date();
         cDate = new Date();
     }
 //}
-*/
+
