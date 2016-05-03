@@ -5,7 +5,8 @@
 </head>
 <body>
 
-<h1 id="dballeft" onload="ticker()" style="font-family:verdana" size=1000></h1>
+<h1 style="font-family:verdana;font-size:300%;text-align:center;">DBal You SHOULD Have Left:</h1>
+<h1 id="dballeft" onload="ticker()" style="font-family:verdana;font-size:20vw;text-align:center;" size=1000></h1>
 
 
 <!-- <script type="text/javascript" src="dbal.js"/> -->
@@ -19,7 +20,7 @@ function ticker() {
     if (result < 0) {
         result = 0.00;
     }
-    document.getElementById("dballeft").innerHTML = "DBal You SHOULD Have Left: $" + result.toFixed(2);
+    document.getElementById("dballeft").innerHTML = result.toFixed(2);
 }
 setInterval(function(){ticker()}, 1000)
 </script>
