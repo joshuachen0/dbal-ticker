@@ -1,6 +1,6 @@
 #introline {
 	font-family: verdana;
-	font-size: 300%;
+	font-size: 3.5vw;
 	text-align: center;
 }
 
@@ -8,4 +8,10 @@
 	font-family: verdana;
 	font-size: 20vw;
 	text-align: center;
+	margin-top:1vh;
 }
+
+img {
+	opacity: 0.015;
+}
+

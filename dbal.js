@@ -10,5 +10,21 @@ function ticker() {
     document.getElementById("dballeft").innerHTML = "$" + result.toFixed(2);
 }
 
+function names() {
+    document.getElementById("names").style.left = Math.random() * window.innerWidth - 100 + "px";
+    document.getElementById("names").style.top = Math.random() * window.innerHeight - 100 + "px";
+}
+
 ticker();
-setInterval(function(){ticker()}, 200)
+names();
+
+time = 0;
+setInterval(function() {
+    ticker();
+    time += 1;
+    if(time >= 5) {
+        names();
+        time = 0;
+    }
+}, 200);
+
