@@ -2,28 +2,14 @@
 <html>
 <head>
 <title>Dbalo</title>
+
+<link rel="stylesheet" type="text/css" href="dbal.css">
 </head>
 <body>
 
-<h1 style="font-family:verdana;font-size:300%;text-align:center;">DBal You SHOULD Have Left:</h1>
-<h1 id="dballeft" onload="ticker()" style="font-family:verdana;font-size:20vw;text-align:center;" size=1000></h1>
+<h1 id="introline">DBal You SHOULD Have Left:</h1>
+<h1 id="dballeft" onload="ticker()"></h1>
 
-
-<!-- <script type="text/javascript" src="dbal.js"/> -->
-<script>
-function ticker() {
-    var startDate = new Date("March 17, 2016");
-    var endDate = new Date("June 11, 2016");
-    var currentDate = new Date();
-    var quarterLength = endDate.getTime() - startDate.getTime();
-    var result = (1 - (currentDate.getTime() - startDate.getTime()) / quarterLength) * 475.00;
-    if (result < 0) {
-        result = 0.00;
-    }
-    document.getElementById("dballeft").innerHTML = result.toFixed(2);
-}
-ticker();
-setInterval(function(){ticker()}, 200)
-</script>
+<script type="text/javascript" src="dbal.js"></script>
 </body>
 </html>
