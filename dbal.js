@@ -1,7 +1,26 @@
-function ticker() {
+/*function ticker() {
     var startDate = new Date("March 17, 2016");
     var endDate = new Date("June 11, 2016");
     var currentDate = new Date();
+    var quarterLength = endDate.getTime() - startDate.getTime();
+    var result = (1 - (currentDate.getTime() - startDate.getTime()) / quarterLength) * 475.00;
+    if (result < 0) {
+        result = 0.00;
+    }
+    document.getElementById("dballeft").innerHTML = "$" + result.toFixed(2);
+}*/
+
+function ticker() {
+    var termDates = [["9/26/16", "12/9/16"], ["1/4/17", "3/17/17"], ["4/3/17", "6/16/17"]];
+    var term = 0;
+    var nextStartDate = new Date(termDates[term+1][0]);
+    var currentDate = new Date();
+    while (currentDate.getTime() >= nextStartDate.getTime()) {
+        term += 1;
+        nextStartDate = new Date(termDates[term+1][0]);
+    }
+    var startDate = new Date(termDates[term][0]);
+    var endDate = new Date(termDates[term][1]);
     var quarterLength = endDate.getTime() - startDate.getTime();
     var result = (1 - (currentDate.getTime() - startDate.getTime()) / quarterLength) * 475.00;
     if (result < 0) {
@@ -27,4 +46,3 @@ setInterval(function() {
         time = 0;
     }
 }, 200);
-
