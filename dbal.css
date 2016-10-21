@@ -8,13 +8,14 @@
 	font-family: verdana;
 	font-size: 20vw;
 	text-align: center;
-	margin-top:1vh;
+	margin-top: 1vh;
 }
 
 #caltechcard {
 	font-family: verdana;
 	font-size: 2vw;
 	text-align: center;
+	margin-top: -10vh;
 }
 
 img {
