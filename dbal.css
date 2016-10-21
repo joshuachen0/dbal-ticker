@@ -11,6 +11,12 @@
 	margin-top:1vh;
 }
 
+#caltechcard {
+	font-family: verdana;
+	font-size: 2vw;
+	text-align: center;
+}
+
 img {
 	opacity: 0.015;
 }
