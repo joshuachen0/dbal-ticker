@@ -26,7 +26,7 @@ function ticker() {
     if (result < 0) {
         result = 0.00;
     }
-    document.getElementById("dballeft").innerHTML = "$" + result.toFixed(6);
+    document.getElementById("dballeft").innerHTML = "$" + result.toFixed(2);
 }
 
 function names() {
