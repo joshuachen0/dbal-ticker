@@ -2,7 +2,7 @@ function ticker() {
     var termDates = [["9/26/16", "12/9/16"], ["1/4/17", "3/17/17"], ["4/3/17", "6/16/17"]];
     var term = 0;
     if (term < 2) var nextStartDate = new Date(termDates[term+1][0]);
-    else var nextStartDate = new Date(termDates([term][0]));
+    else var nextStartDate = new Date(termDates([term][1]));
     var currentDate = new Date();
     while (currentDate.getTime() >= nextStartDate.getTime()) {
         term += 1;
