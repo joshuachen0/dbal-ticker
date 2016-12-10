@@ -16,7 +16,7 @@ function ticker() {
     var endDate = thisTermDates[1];
     var quarterLength = endDate.getTime() - startDate.getTime();
     var result = 0.00;
-    if (currentDate.getTime() >= startDate)
+    if (currentDate.getTime() >= startDate && currentDate.getTime() <= endDate)
         result = (1 - (currentDate.getTime() - startDate.getTime()) / (quarterLength + lengthOfDayInMs)) * 475.00;
     document.getElementById("dballeft").innerHTML = "$" + result.toFixed(2);
 }
